@@ -72,11 +72,9 @@ const uiConfig = {
   // 此版本只支持 material
   "theme": "material", // DO NOT set it to classic
   "dark_mode": false,
-  "main_color": "blue-grey",
+  "main_color": "light-green",
   "accent_color": "blue",
-  /*"main_color": "light-green",
-  "accent_color": "green",*/
-  "fluid_navigation_bar": true,
+  "fluid_navigation_bar": true
 };
 
 /**
@@ -129,7 +127,7 @@ function html(current_drive_order = 0, model = {}) {
     window.current_drive_order = ${current_drive_order};
     window.UI = JSON.parse('${JSON.stringify(uiConfig)}');
   </script>
-  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/yanzai/goindex@${authConfig.version}/themes/${uiConfig.theme}/app.js"></script>
+  <script src="//cdn.jsdelivr.net/combine/gh/jquery/jquery@3.2/dist/jquery.min.js,gh/machsix/goindex@${authConfig.version}/themes/${uiConfig.theme}/app.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/mdui/0.4.3/js/mdui.min.js"></script>
 </head>
 <body>
