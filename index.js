@@ -1,12 +1,9 @@
 const authConfig = {
   "siteName": "GoIndex", // 网站名称
-  "version": "_4.28", // 程序版本。用户不要手动修改
-  /*"client_id": "202264815644.apps.googleusercontent.com",
-  "client_secret": "X4Z3ca8xfWDb1Voo-F9a7ZxJ",*/
-  // 【注意】强烈推荐使用自己的 client_id 和 client_secret
-  "client_id": "",
-  "client_secret": "",
-  "refresh_token": "", // 授权 token
+  "version": "2.0.0", // 程序版本。用户不要手动修改
+  "client_id": 'abcd',
+  "client_secret": 'abcd',
+  "refresh_token": 'abcd',
   /**
    * 设置要显示的多个云端硬盘；按格式添加多个
    * [id]: 可以是 团队盘id、子文件夹id、或者"root"（代表个人盘根目录）；
@@ -22,22 +19,10 @@ const authConfig = {
    */
   "roots": [
     {
-      id: "root",
-      name: "个人盘"
-    },
-    {
-      id: "drive_id",
-      name: "团队盘1",
-      user: 'user1',
-      pass: "111",
-      protect_file_link: true
-    },
-    {
-      id: "folder_id",
-      name: "文件夹",
-      // 只设置密码、只设置用户名、同时设置用户名密码，都是可以的
-      user: '',
-      pass: "222",
+      id: "abcd",
+      name: "Team",
+     // user: 'abcd',
+     // pass: "abcd",
       protect_file_link: false
     }
   ],
@@ -72,8 +57,8 @@ const uiConfig = {
   // 此版本只支持 material
   "theme": "material", // DO NOT set it to classic
   "dark_mode": false,
-  "main_color": "light-green",
-  "accent_color": "blue",
+  "main_color": "purple",
+  "accent_color": "purple",
   "fluid_navigation_bar": true
 };
 
